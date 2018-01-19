@@ -9,7 +9,7 @@ Usage:
 
 ONLY FOR ODOO/OPENERP
 
-If you dont know Odoo this is not for you. This browser extensition is a tool for those who use debug more on the Odoo erp.
+If you dont know Odoo this is not for you. This browser extension is a tool for those who use debug more on the Odoo erp.
 
 ## Installation
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/odoo-easy-debug/
