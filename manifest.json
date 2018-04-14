@@ -1,23 +1,58 @@
 {
-    "name": "Odoo EasyDebug",
-    "version": "1.0.0.1",
+    "name": "Odoo Easy Debug",
+    "version": "2.0.0.1",
     "manifest_version": 2,
 
     "description": "This extension changes to debug mode and vice-versa in Odoo ERP",
 
-    "icons": {
-        "128": "icons/bug-off.png"
+    "icons":
+    {
+        "128": "icons/default-off.png"
     },
 
-    "browser_action": {
+    "browser_action":
+    {
         "default_title": "Click to activate odoo debug mode"
     },
 
-    "background":{
-    "scripts":["background.js"]
-  },
+    "background":
+    {
+        "scripts": ["background.js"]
+    },
+
+    "options_ui":
+    {
+        "page": "options/options.html"
+    },
 
     "permissions": [
-        "tabs"
-    ]
+        "tabs",
+        "storage"
+    ],
+
+    "commands":
+    {
+        "toggle-debug":
+        {
+            "suggested_key":
+            {
+                "default": "Ctrl+Shift+Period",
+                "mac": "Command+Shift+Period",
+                "windows": "Ctrl+Shift+Period",
+                "linux": "Ctrl+Shift+Period"
+            }
+        }
+    },
+
+    "developer":
+    {
+        "name": "TheBigTester",
+        "url": "https://github.com/TheBigTester/Odoo-Easy-Debug"
+    },
+
+    "applications": {
+        "gecko": {
+            "id": "odoo-easy-debug@addon.thebigtester"
+        }
+    }
 }

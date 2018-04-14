@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        #icon_changer_div{
+            padding: 30px 10px;
+        }
+        /* Table css */
+        .oed-icon-table{
+            border-spacing: 8px 5px;
+        }
+        .oed-icon-table tr:first-child > td,
+        .oed-icon-table tr > td:first-child{
+            border: unset !important;
+            box-shadow: unset;
+        }
+        .oed-icon-table tr:first-child > td{
+            text-decoration: underline; 
+        }
+        .oed-icon-table tr > td:first-child{
+            padding-right: 30px;
+            font-weight: bold;
+        }
+        .oed-icon-table td
+        {
+            text-align: center;
+            padding: 5px 10px;
+            border: 0px solid steelblue;
+            border-radius:6px;
+            -moz-border-radius:6px;
+            margin: 0px 15px;
+            box-shadow: 1px 2px 4px steelblue;
+        }
+        /* imgs */
+        .oed-icon{
+            max-width: 64px;
+        }
+        /* space */
+        .oed-space-tr td{
+            padding-top: 10px;
+        }
+        /* tributes */
+        .oed-designed-by-tr > td:first-child{
+            text-align: right;
+            padding-right: 15px !important;
+            box-shadow: 1px 2px 4px steelblue !important;
+        }
+        .oed-designed-by-tr > td{
+            border: unset !important;
+            font-weight: normal !important;
+            font-style: italic;
+            font-size: 10px;
+        }
+    </style>
+    <div>
+        <h3>Key combinations for Easy Toogle (double click to assets)</h3>
+        <p><b>Windows:</b> Ctrl+Shift+Period</p>
+        <p><b>Mac:</b> Command+Shift+Period</p>
+        <p><b>Linux:</b> Ctrl+Shift+Period</p>
+    </div>
+    <form>
+        <div id="icon_changer_div">
+            <label>
+                Icon set:
+                <select id="icon_set_option">
+                    <option value="default">Default</option>
+                    <option value="opt1">Option 1</option>
+                    <option value="opt2">Option 2</option>
+                    <option value="opt3">Option 3</option>
+                </select>
+            </label>
+            <button type="submit">Save</button>
+            <h3>ICON set options:</h3>
+            <table class="oed-icon-table">
+                <tr>
+                    <td>Debug Status</td>
+                    <td>Default</td>
+                    <td>Option 1</td>
+                    <td>Option 2</td>
+                    <td>Option 3</td>
+                </tr>
+                <tr>
+                    <td>OFF</td>
+                    <td><img class="oed-icon" src="../icons/default-off.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt1-off.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt2-off.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt3-off.png"/></td>
+                </tr>
+                <tr>
+                    <td>ON</td>
+                    <td><img class="oed-icon" src="../icons/default-on.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt1-on.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt2-on.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt3-on.png"/></td>
+                </tr>
+                <tr>
+                    <td>ON<br/>W/ ASSETS</td>
+                    <td><img class="oed-icon" src="../icons/default-on-assets.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt1-on-assets.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt2-on-assets.png"/></td>
+                    <td><img class="oed-icon" src="../icons/opt3-on-assets.png"/></td>
+                </tr>
+                <tr class="oed-space-tr">
+                    <!-- space -->
+                    <td colspan="42"/>
+                </tr>
+                <tr class="oed-designed-by-tr">
+                    <td>Designed by:</td>
+                    <td>Dave Gandy</td>
+                    <td>Freepik</td>
+                    <td>Roundicons</td>
+                    <td>Smashicons</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="42">Icons provided by <a href="https://www.flaticon.com">www.flaticon.com</a></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script src="options.js"></script>
+</body>
+
+</html>
