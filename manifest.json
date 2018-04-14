@@ -52,7 +52,7 @@
 
     "applications": {
         "gecko": {
-            "id": "odoo-easy-debug@addon.thebigtester"
+            "id": "{a0f88751-df67-4902-8da4-543cc4ce3d48}"
         }
     }
 }
