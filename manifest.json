@@ -1,6 +1,6 @@
 {
     "name": "Odoo Easy Debug",
-    "version": "2.5.0.0",
+    "version": "3.0.0.0",
     "manifest_version": 2,
     "description": "This extension changes to debug mode and vice-versa in Odoo ERP",
     "icons": {
